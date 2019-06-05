@@ -17,7 +17,7 @@ The dataset used is the Oxford Dataset courtesy of Oxford’s Robotics Institute
 - The input images are in Bayer format which have to be converted to RGB scal
 - The image has to be undistorted
 
-However, to speed up the processing, I have already done the same and saved them in a folder FRAMES which can be taken direclty from the folder Datasets. I have also converted to grayscale as it is easier to process in one channel. A black mask has been placed on the hood of the car as it remains stationary throughout the video and hence wont affect our output apart from causing outliers. 
+However, to speed up the processing, I have already done the same and saved them in a folder FRAMES which can be taken direclty from the folder Datasets. I have also converted to grayscale as it is easier to process in one channel. 
 
 <p align="center">
   <img src="/Images/30.jpg" alt="post">
