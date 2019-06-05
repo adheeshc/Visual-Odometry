@@ -9,36 +9,47 @@ Please refer to [Project Report](https://github.com/adheeshc/Visual-Odometry/blo
 ### Preparing the Input
 
 <p align="center">
-  <img src="/Images/combined_hsl.png" alt="Input Prep">
+  <img src="/Images/pre.jpg" alt="pre">
 </p>
+
 The dataset used is the Oxford Dataset courtesy of Oxford’s Robotics Institute which if downloaded directly requires further pre-processing
 
-- The input images are in Bayer format which have to be converted to RGB scale
+- The input images are in Bayer format which have to be converted to RGB scal
 - The image has to be undistorted
 
-However, to speed up the processing, I have already done the same and saved them in a folder FRAMES which can be taken direclty from the folder Datasets
+However, to speed up the processing, I have already done the same and saved them in a folder FRAMES which can be taken direclty from the folder Datasets. I have also converted to grayscale as it is easier to process in one channel. A black mask has been placed on the hood of the car as it remains stationary throughout the video and hence wont affect our output apart from causing outliers. 
+
+<p align="center">
+  <img src="/Images/30.jpg" alt="post">
+</p>
 
 ### Fundamental Matrix Estimation
 
 <p align="center">
-  <img src="/Images/homography.png" alt="Homography">
+  <img src="/Images/sift.png" alt="SIFT">
 </p>
 
 - SIFT algorithm is used to detect keypoints
 - Point correspondences are found between successive frames using the 8-point algorithm
 - Normalizing all the points around the mean of the points and enclose them at a distance of √2 from the new center locationa
+
+
+<p align="center">
+  <img src="/Images/pre_ransac.png" alt="pre_ransac">
+</p>
+
 - The best Fundamental matrix is found using the RANSAC algorithm 
 
 ### Camera Pose Estimation
-
-<p align="center">
-  <img src="/Images/histo.gif" alt="final_histo">
-</p>
 
 - Essential m atrix is calculated from the Fundamental matrix accounting for the Camera Calibration Parameters.
 - The Essential matix is decomposed into 4 possible Translations and Rotations pairs
 
 ### Triangulation Check
+
+<p align="center">
+  <img src="/Images/my_code.png" alt="my_code">
+</p>
 
 The correct T and R pair is found from depth positivity. I choose the R and T which gives the largest amount of positive depth values.
 
@@ -46,9 +57,20 @@ The values are saved in a csv file updated2.csv
 
 ### Built-in Check
 
+<p align="center">
+  <img src="/Images/built_in.png" alt="Built_in">
+</p>
+
 Finally, the results are compared to against the rotation/translation parameters recovered using the cv2.findEssentialMat and cv2.recoverPose from opencv.The final trajectory for both methods are plotted compared.
 
 The values are saved in a csv file points.csv
+
+### Final Output
+
+<p align="center">
+  <img src="/Images/video.gif" alt="video">
+</p>
+
 
 ## **DEPENDANCIES**
 
@@ -71,7 +93,7 @@ The values are saved in a csv file points.csv
 
 - Images folder - Contains images for github use (can be ignored)
 
-- Output folder - Contains output videos and 2
+- Output folder - Contains output videos and 2 output csv files
   - points_final.csv - This is the output points from the Built_in.py
   - updated2_final.csv - This is the output points from the FINAL_CODE.py
 
