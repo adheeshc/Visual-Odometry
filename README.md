@@ -9,7 +9,7 @@ Please refer to [Project Report](https://github.com/adheeshc/Visual-Odometry/blo
 ### Preparing the Input
 
 <p align="center">
-  <img src="/Images/pre.jpg" alt="pre">
+  <img src="/Images/pre.png" alt="pre">
 </p>
 
 The dataset used is the Oxford Dataset courtesy of Oxford’s Robotics Institute which if downloaded directly requires further pre-processing
