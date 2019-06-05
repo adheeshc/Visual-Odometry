@@ -14,7 +14,7 @@ Please refer to [Project Report](https://github.com/adheeshc/Visual-Odometry/blo
 
 The dataset used is the Oxford Dataset courtesy of Oxford’s Robotics Institute which if downloaded directly requires further pre-processing
 
-- The input images are in Bayer format which have to be converted to RGB scal
+- The input images are in Bayer format which have to be converted to RGB scale
 - The image has to be undistorted
 
 However, to speed up the processing, I have already done the same and saved them in a folder FRAMES which can be taken direclty from the folder Datasets. I have also converted to grayscale as it is easier to process in one channel. 
