@@ -77,11 +77,11 @@ The values are saved in a csv file points.csv
 
 ## **FILE DESCRIPTION**
 
-- Code Folder/[FINAL CODE.py]() - The final code without for Visual Odometry
-- Code Folder/[Built_in.py]() - The code made completely using Built-in functions
-- Code Folder/[ReadCameraModel.py]() - Loads camera intrisics and undistortion LUT from disk
-- Code Folder/[UndistortImage.py]() - Undistort an image using a lookup table
-- Code Folder/[VIDEO.py]() - Used to display the 2 final plots - my code vs built-in
+- Code Folder/[FINAL CODE.py](https://github.com/adheeshc/Visual-Odometry/blob/master/Code/FINAL%20CODE.py) - The final code without for Visual Odometry
+- Code Folder/[Built_in.py](https://github.com/adheeshc/Visual-Odometry/blob/master/Code/Built_in.py) - The code made completely using Built-in functions
+- Code Folder/[ReadCameraModel.py](https://github.com/adheeshc/Visual-Odometry/blob/master/Code/ReadCameraModel.py) - Loads camera intrisics and undistortion LUT from disk
+- Code Folder/[UndistortImage.py](https://github.com/adheeshc/Visual-Odometry/blob/master/Code/UndistortImage.py) - Undistort an image using a lookup table
+- Code Folder/[VIDEO.py](https://github.com/adheeshc/Visual-Odometry/blob/master/Code/VIDEO.py) - Used to display the 2 final plots - my code vs built-in
 
 - Dataset folder - Contains link to dataset. Should have 3 folders - Frames, SIFT images and model
 
