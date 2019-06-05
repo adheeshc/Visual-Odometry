@@ -31,13 +31,7 @@ However, to speed up the processing, I have already done the same and saved them
 
 - SIFT algorithm is used to detect keypoints
 - Point correspondences are found between successive frames using the 8-point algorithm
-- Normalizing all the points around the mean of the points and enclose them at a distance of √2 from the new center locationa
-
-
-<p align="center">
-  <img src="/Images/pre_ransac.png" alt="pre_ransac">
-</p>
-
+- Normalizing all the points around the mean of the points and enclose them at a distance of √2 from the new center location
 - The best Fundamental matrix is found using the RANSAC algorithm 
 
 ### Camera Pose Estimation
@@ -48,7 +42,7 @@ However, to speed up the processing, I have already done the same and saved them
 ### Triangulation Check
 
 <p align="center">
-  <img src="/Images/.png" alt="my_code">
+  <img src="/Images/my_code.png" alt="my_code">
 </p>
 
 The correct T and R pair is found from depth positivity. I choose the R and T which gives the largest amount of positive depth values.
