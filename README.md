@@ -48,7 +48,7 @@ However, to speed up the processing, I have already done the same and saved them
 ### Triangulation Check
 
 <p align="center">
-  <img src="/Images/my_code.png" alt="my_code">
+  <img src="/Images/.png" alt="my_code">
 </p>
 
 The correct T and R pair is found from depth positivity. I choose the R and T which gives the largest amount of positive depth values.
@@ -58,7 +58,7 @@ The values are saved in a csv file updated2.csv
 ### Built-in Check
 
 <p align="center">
-  <img src="/Images/built_in.png" alt="Built_in">
+  <img src="/Images/compare.png" alt="Built_in">
 </p>
 
 Finally, the results are compared to against the rotation/translation parameters recovered using the cv2.findEssentialMat and cv2.recoverPose from opencv.The final trajectory for both methods are plotted compared.
